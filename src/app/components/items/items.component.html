@@ -1,0 +1,10 @@
+<app-total class="total" mensaje="Total a pagar: " [total]="total"></app-total>
+<div>
+  <app-item 
+    *ngFor="let item of items"
+    [item]="item"
+    (deleteItem)="deleteItem($event)"
+    (toggleItem)="toggleItem($event)"
+  ></app-item>
+  <!--//$event va a transmitir lo q pasemos de emit(item), osea un item-->
+</div>

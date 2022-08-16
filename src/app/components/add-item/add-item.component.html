@@ -1,0 +1,56 @@
+<div class="container" id="formulario">
+  <h2>Registrar nuevo producto</h2>
+  <div class="row">
+   <form action="" (ngSubmit)="onSubmit()"> <!-- //evento al enviar el formulario -->
+      <div class="col col-xl-2 col col-md-6 col col-sm-3">
+        <label for="">ID del producto</label>
+        <input
+          type="number"
+          class="form-control"
+          name="id"
+          placeholder="Ejemplo: Mayonesa"
+          [(ngModel)]="id"
+        />
+      </div>
+      <div class="col col-xl-6 col col-md-6 col col-sm-3">
+        <label for="">Nombre del producto</label>
+        <input
+          type="text"
+          class="form-control"
+          name="title"
+          placeholder="Ejemplo: Mayonesa"
+          [(ngModel)]="title"
+        />
+      </div>
+      <div class="col col-xl-2 col col-md-6 col col-sm-3">
+        <label for="">Precio</label>
+        <input
+          type="text"
+          class="form-control"
+          name="price"
+          placeholder="$000.00"
+          [(ngModel)]="price"
+        />
+      </div>
+      <div class="col col-xl-2 col col-md-6 col col-sm-3">
+        <label for="">Cantidad</label>
+        <input
+          type="number"
+          class="form-control"
+          name="quantity"
+          [(ngModel)]="quantity"
+        />
+      </div>
+      <div>
+        <div class="row">
+          <div class="col col-xl-1 col col-md-1 col col-sm-1 "><br>
+            <button class="btn btn-lg btn-success" type="submit" id="agregar">
+              Agregar
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

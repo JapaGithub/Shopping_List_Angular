@@ -1,0 +1,14 @@
+.total{
+    color: rgb(51, 203, 31);
+    font-style:oblique;
+    font-weight: 500;
+}
+.completed{
+    text-decoration: line-through;
+    color: rgb(146, 160, 146);
+}
+
+.completed .totalUnit{
+    color: rgb(146, 160, 146);
+}
+

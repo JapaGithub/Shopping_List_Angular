@@ -1,0 +1,15 @@
+<div class="container">
+    <table class="table table-hover row" [ngClass]="{'completed':item.completed}">
+        <tbody  >
+          <tr>
+            <td class="col col-xl-4 col col-md-4 col col-sm-4"><input type="checkbox" [checked]="item.completed" (change)="onToggle(item)" />
+              {{ item.title }}</td>
+            <td class="col col-xl-3 col col-md-3 col col-sm-4">{{ item.price| currency}}</td>
+            <td class="col col-xl-2 col col-md-2 col col-sm-4">{{ item.quantity }}</td>
+            <td class="col col-xl-2 col col-md-2 col col-sm-4 totalUnit" >{{ item.price * item.quantity | currency }}</td>
+            <td class="col col-xl-2 col col-md-2 col col-sm-4"><button class="btn btn-danger" (click)="onDelete(item)">Eliminar</button></td>
+          </tr>
+        </tbody>
+     </table>
+</div>
+  
